@@ -2,25 +2,18 @@
 
 const Hapi = require('hapi')
 
+const config = require('./config')
+
 const plugins = [
   {
     register: require('hapi-auth-fb'),
-    options: {
-      client_id: '',
-      client_secret: '',
-      success: function (credentials) {
-        console.log(credentials)
-      }
-    }
+    options: config.plugin
   }
 ]
 
 const server = new Hapi.Server()
 
-server.connection({
-  host: 'localhost',
-  port: 8000
-})
+server.connection(config.hapi)
 
 server.register(plugins, function (err) {
   if (err) {
