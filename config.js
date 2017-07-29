@@ -1,11 +1,13 @@
 'use strict'
 
 const os = require('os')
+const ip = require('ip')
 
 const config = {}
 
 config.hapi = {
   host: os.hostname(),
+  address: ip.address(),
   port: 8000
 }
 
