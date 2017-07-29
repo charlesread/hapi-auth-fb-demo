@@ -1,0 +1,15 @@
+{
+  "name": "hapi-auth-fb-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^16.5.0",
+    "hapi-auth-fb": "0.0.1"
+  }
+}
