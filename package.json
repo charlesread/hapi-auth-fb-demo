@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "hapi": "^16.5.0",
-    "hapi-auth-fb": "0.0.5",
+    "hapi-auth-fb": "0.0.7",
     "ip": "^1.1.5"
   }
 }

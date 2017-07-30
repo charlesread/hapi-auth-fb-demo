@@ -16,6 +16,9 @@ config.plugin = {
   client_secret: '',
   success: function (credentials) {
     console.log(credentials)
+  },
+  error: function (err) {
+    console.error(err.message)
   }
 }
 
